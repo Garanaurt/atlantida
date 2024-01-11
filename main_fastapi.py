@@ -34,9 +34,3 @@ async def check_activation(activation_code: str, hwid: str):
     else:
         return {"status": "hwid_not_valid"}
 
-
-
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="127.0.0.1", port=8000)
